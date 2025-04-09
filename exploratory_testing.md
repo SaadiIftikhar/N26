@@ -1,3 +1,6 @@
+## Charters
+---
+
 ### Charter 1: Add Expense & Income Flow
 
 - **Objective**: Test adding a new expense and income, assigning them to available categories, and ensuring summary updates correctly.
