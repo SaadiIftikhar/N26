@@ -72,18 +72,18 @@
 **📝 Description**:  
 When a user tries to add an expense without selecting a category, the app crashes instead of prompting an error or default behavior.
 
-**✅ Expected Result**:  
-The app should prevent submission or show an error message like "Please select a category."
-
-**🚫 Actual Result**:  
-App crashes immediately upon clicking the “✓” save button.
-
 **📲 Steps to Reproduce**:
 1. Launch the app.
 2. Tap on "Add Expense".
 3. Enter any amount (e.g., 10).
 4. Do **not** select a category.
 5. Tap the save icon (✓).
+
+**✅ Expected Result**:  
+The app should prevent submission or show an error message like "Please select a category."
+
+**🚫 Actual Result**:  
+App crashes immediately upon clicking the “✓” save button.
 
 **📷 Screenshots / Logs**:
 _Add screenshot or crash log here if available._
