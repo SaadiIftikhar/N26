@@ -1,0 +1,3 @@
+appId: com.monefy.app.lite
+---
+- runScript: onboarding.js 
