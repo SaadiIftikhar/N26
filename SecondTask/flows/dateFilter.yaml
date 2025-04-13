@@ -1,0 +1,237 @@
+appId: com.monefy.app.lite
+---
+#Onbaroding Flow
+- runFlow: C:\Users\Saad\Desktop\N26\SecondTask\flows\onboarding.yaml
+
+# Open navigation menu and check date filter options
+- assertVisible: ${output.dateFilter.navigation.openButton}
+- tapOn: ${output.dateFilter.navigation.openButton}
+- assertVisible:
+    text: ${output.dateFilter.navigation.allAccounts.text}
+    index: ${output.dateFilter.navigation.allAccounts.index}
+- assertVisible:
+    id: ${output.dateFilter.dateButtons.dayPeriod}
+- assertVisible:
+    id: ${output.dateFilter.dateButtons.weekPeriod}
+- assertVisible:
+    id: ${output.dateFilter.dateButtons.customPeriod}
+- assertVisible:
+    id: ${output.dateFilter.dateButtons.showDatePicker}
+
+# Open date picker and select specific date
+- tapOn:
+    id: ${output.dateFilter.dateButtons.showDatePicker}
+- assertVisible: ${output.dateFilter.datePicker.title}
+- assertVisible:
+    id: ${output.dateFilter.datePicker.confirmButton}
+- assertVisible:
+    id: ${output.dateFilter.datePicker.headerToggle}
+- tapOn:
+    id: ${output.dateFilter.datePicker.headerToggle}
+- tapOn:
+    id: ${output.dateFilter.datePicker.textInputDate}
+- "eraseText"
+- inputText: ${output.dateFilter.datePicker.sampleDate}
+- assertVisible: ${output.dateFilter.datePicker.datePreview}
+- tapOn:
+    id: ${output.dateFilter.datePicker.confirmButton}
+
+# First day operations
+- assertVisible: ${output.dateFilter.dateDisplay.singleDay}
+- assertVisible: ${output.dateFilter.balance.initial}
+- assertVisible:
+    id: ${output.dateFilter.income.button}
+- tapOn:
+    id: ${output.dateFilter.income.buttonTitle}
+- assertVisible: ${output.dateFilter.income.recurringMessage}
+- tapOn: ${output.dateFilter.income.recurringMessage}
+- assertVisible: ${output.dateFilter.dateDisplay.singleDay}
+- assertVisible:
+    text: ${output.dateFilter.income.numPad.initialValue.text}
+    index: ${output.dateFilter.income.numPad.initialValue.index}
+- assertVisible:
+    id: ${output.dateFilter.income.numPad.button2}
+- assertVisible:
+    id: ${output.dateFilter.income.numPad.button0}
+- assertVisible:
+    id: ${output.dateFilter.income.actionButton}
+
+# Add income for first day
+- tapOn:
+    id: ${output.dateFilter.income.numPad.button2}
+- tapOn:
+    id: ${output.dateFilter.income.numPad.button0}
+- assertVisible: ${output.dateFilter.income.numPad.enteredAmount}
+- tapOn:
+    id: ${output.dateFilter.income.actionButton}
+- assertVisible:
+    id: ${output.dateFilter.income.category.image}
+    index: ${output.dateFilter.income.category.imageIndex}
+- tapOn:
+    id: ${output.dateFilter.income.category.image}
+    index: ${output.dateFilter.income.category.imageIndex}
+
+# Dismiss notification
+- swipe:
+    start: "50%, 88%"
+    end: "90%, 99%"
+    duration: 500
+
+# Verify balance after income
+- assertVisible: ${output.dateFilter.income.balanceMessage}
+- tapOn: ${output.dateFilter.income.balanceMessage}
+- assertVisible: ${output.dateFilter.balance.afterFirstIncome}
+
+# Add expense for first day
+- assertVisible:
+    id: ${output.dateFilter.expense.button}
+- tapOn:
+    id: ${output.dateFilter.expense.button}
+- assertVisible: ${output.dateFilter.expense.title}
+- assertVisible: ${output.dateFilter.dateDisplay.singleDay}
+- assertVisible:
+    text: ${output.dateFilter.expense.numPad.initialValue.text}
+    index: ${output.dateFilter.expense.numPad.initialValue.index}
+- assertVisible:
+    id: ${output.dateFilter.expense.numPad.button5}
+- assertVisible:
+    id: ${output.dateFilter.expense.actionButton}
+- tapOn:
+    id: ${output.dateFilter.expense.numPad.button5}
+- assertVisible:
+    text: ${output.dateFilter.expense.numPad.enteredAmount.text}
+    index: ${output.dateFilter.expense.numPad.enteredAmount.index}
+- tapOn:
+    id: ${output.dateFilter.expense.actionButton}
+- assertVisible:
+    id: ${output.dateFilter.expense.category.image}
+    index: ${output.dateFilter.expense.category.imageIndex}
+- tapOn:
+    id: ${output.dateFilter.expense.category.image}
+    index: ${output.dateFilter.expense.category.imageIndex}
+
+# Dismiss notification
+- swipe:
+    start: "50%, 88%"
+    end: "90%, 99%"
+    duration: 500
+
+# Verify balance after expense
+- assertVisible: ${output.dateFilter.dateDisplay.singleDay}
+- assertVisible: ${output.dateFilter.balance.afterFirstExpense}
+
+# Switch to next day
+- assertVisible: ${output.dateFilter.dateDisplay.nextDay}
+- tapOn: ${output.dateFilter.dateDisplay.nextDay}
+- assertVisible: ${output.dateFilter.dateDisplay.nextDay}
+- assertVisible: ${output.dateFilter.balance.initial}
+
+# Add income for second day
+- assertVisible:
+    id: ${output.dateFilter.income.button}
+- tapOn:
+    id: ${output.dateFilter.income.button}
+- assertVisible: ${output.dateFilter.income.title}
+- assertVisible: ${output.dateFilter.dateDisplay.nextDay}
+- assertVisible:
+    text: ${output.dateFilter.income.numPad.initialValue.text}
+    index: ${output.dateFilter.income.numPad.initialValue.index}
+- assertVisible:
+    id: ${output.dateFilter.income.numPad.button2}
+- assertVisible:
+    id: ${output.dateFilter.income.numPad.button0}
+- assertVisible:
+    id: ${output.dateFilter.income.actionButton}
+- tapOn:
+    id: ${output.dateFilter.income.numPad.button2}
+- tapOn:
+    id: ${output.dateFilter.income.numPad.button0}
+- assertVisible: ${output.dateFilter.income.numPad.enteredAmount}
+- tapOn:
+    id: ${output.dateFilter.income.actionButton}
+- assertVisible:
+    id: ${output.dateFilter.income.category.image}
+    index: ${output.dateFilter.income.category.imageIndex}
+- tapOn:
+    id: ${output.dateFilter.income.category.image}
+    index: ${output.dateFilter.income.category.imageIndex}
+
+# View tooltip for previous period
+- assertVisible: ${output.dateFilter.tooltips.previousPeriod}
+- tapOn: ${output.dateFilter.tooltips.previousPeriod}
+
+# Dismiss notification
+- swipe:
+    start: "50%, 88%"
+    end: "90%, 99%"
+    duration: 500
+
+# View tooltip for carry over
+- assertVisible: ${output.dateFilter.tooltips.carryOver}
+- tapOn: ${output.dateFilter.tooltips.carryOver}
+
+# Open overflow menu
+- assertVisible:
+    id: ${output.dateFilter.ui.overflowMenu}
+- tapOn:
+    id: ${output.dateFilter.ui.overflowMenu}
+- assertVisible: ${output.dateFilter.balance.afterFirstIncome}
+
+# Add expense for second day
+- assertVisible:
+    id: ${output.dateFilter.expense.button}
+- tapOn:
+    id: ${output.dateFilter.expense.button}
+- assertVisible: ${output.dateFilter.expense.title}
+- assertVisible: ${output.dateFilter.dateDisplay.nextDay}
+- assertVisible:
+    id: ${output.dateFilter.expense.numPad.button5}
+- assertVisible:
+    id: ${output.dateFilter.expense.actionButton}
+- tapOn:
+    id: ${output.dateFilter.expense.numPad.button5}
+- assertVisible:
+    text: ${output.dateFilter.expense.numPad.enteredAmount.text}
+    index: ${output.dateFilter.expense.numPad.enteredAmount.index}
+- tapOn:
+    id: ${output.dateFilter.expense.actionButton}
+- assertVisible:
+    id: ${output.dateFilter.expense.category.image}
+    index: ${output.dateFilter.expense.category.imageIndex}
+- tapOn:
+    id: ${output.dateFilter.expense.category.image}
+    index: ${output.dateFilter.expense.category.imageIndex}
+
+# Dismiss notification
+- swipe:
+    start: "50%, 88%"
+    end: "90%, 99%"
+    duration: 500
+
+# Verify balance after expense
+- assertVisible: ${output.dateFilter.balance.afterFirstExpense}
+- assertVisible: ${output.dateFilter.dateDisplay.nextDay}
+
+# Switch to week view
+- tapOn: ${output.dateFilter.navigation.openButton}
+- tapOn:
+    id: ${output.dateFilter.dateButtons.weekPeriod}
+- assertVisible: ${output.dateFilter.balance.weekTotal}
+- assertVisible: ${output.dateFilter.dateDisplay.weekRange}
+
+# Switch to custom period view
+- tapOn: ${output.dateFilter.navigation.openButton}
+- tapOn:
+    id: ${output.dateFilter.dateButtons.customPeriod}
+- tapOn:
+    id: ${output.dateFilter.datePicker.headerToggle}
+- inputText: ${output.dateFilter.datePicker.sampleDate}
+- tapOn:
+    id: ${output.dateFilter.datePicker.textInputRangeEnd}
+- inputText: ${output.dateFilter.datePicker.sampleEndDate}
+- assertVisible:
+    id: ${output.dateFilter.datePicker.confirmButton}
+- tapOn:
+    id: ${output.dateFilter.datePicker.confirmButton}
+- assertVisible: ${output.dateFilter.dateDisplay.customRange}
+- assertVisible: ${output.dateFilter.balance.weekTotal}

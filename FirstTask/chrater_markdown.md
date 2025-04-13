@@ -1,77 +1,38 @@
-# Exploratory Testing Charter: Monefy App Onboarding Flow
- 
-**Duration:** 30 minutes  
-**Device:** [Pixel 7 Pro, Android 16]  
-**App Version:** [version 1.18.0 com.monefy.app.lite]  
-**Platform:** Android
+# Monefy App Exploratory Testing - Onboarding Flow
 
----
+## Exploratory Testing Charters
 
-## Charter
+**Charter:**  
+Explore the onboarding flow of the Monefy app, including the three welcome screens, the promotional offer screen, and contextual help tooltips shown during first-time use. The goal is to assess the usability, content clarity, and visual consistency of the onboarding experience.
 
-Explore the onboarding experience of the Monefy app, including the initial three screens, the welcome offer screen, and the four contextual help texts. Identify any usability issues, inconsistencies, or functional defects affecting the first-time user experience.
-
----
-
-## Scope
-
-- Onboarding screens: Welcome, Spend Control, Financial Goals  
-- Welcome offer modal  
-- First-use contextual help texts  
-
----
-
-## Test Notes
-
-### Onboarding Screens
-
-#### Welcome Screen
-- Verified welcome message is displayed.
-- Tapped on **"GET STARTED"** button.
-
-#### Spend Control Screen
-- Confirmed message: *"Control your spend and start saving"*.
-- Tapped on **"AMAZING"** button.
-
-#### Financial Goals Screen
-- Observed message: *"Together we’ll reach your financial goals"*.
-- Tapped on **"I'M READY"** button.
-
----
-
-### Welcome Offer Screen
-
-- Verified the welcome offer modal appears.
-- Tapped on the **close button (X)** to dismiss.
-
----
-
-### First-Use Help Texts
-
-- Observed four contextual help texts upon entering the main app screen.
-- Navigated through each help text using **"Next"** or similar button.
+**Scope:**  
+- Initial onboarding screens (Welcome, Spend Control, Financial Goals)  
+- Promotional offer screen after onboarding  
+- Help texts/tooltips displayed on first app launch  
 
 ---
 
 ## Findings
 
-1. **UI Clipping:** The *"I'M READY"* button is partially cut off on smaller screens.
-2. **Accessibility:** Close button on the welcome offer modal is not visible in high-contrast mode.
-3. **Grammar Error:** One help text says: *"You're ready to track you're expenses"* — should be **"your expenses"**.
+- ✅ All onboarding screens appeared in the expected sequence with smooth transitions.
+- 🟠 The "I'm Ready" button was partially cut off on devices with smaller screens.
+- 🟠 The close (X) button for the welcome offer was difficult to see in high-contrast accessibility mode.
+- 🔴 One of the contextual help texts included a grammatical error: *"You're ready to track you're expenses"* instead of *"your expenses"*.
+- ✅ Contextual help texts were displayed correctly and guided the user through initial actions.
 
 ---
 
-## Risks
+## Prioritization of the Charter
 
-- Inaccessible close button could block users from entering the main app.
-- Poor grammar in onboarding can hurt user trust and app credibility.
+**Priority: High**  
+Reason: Onboarding is a user’s first interaction with the app and has a direct impact on user retention, perception of quality, and accessibility. Any issues in this flow could lead to drop-off before the user reaches the core functionality of the app.
 
 ---
 
-## Recommendations
+## Risks to Mitigate
 
-- Test UI across different screen sizes and resolutions.
-- Validate all components in accessibility and contrast modes.
-- Proofread all user-facing texts to maintain professionalism.
+- Accessibility issues may prevent users from dismissing overlays, particularly for visually impaired users.
+- UI clipping on smaller screens could block essential navigation, affecting usability.
+- Grammar or content issues can reduce user trust and app professionalism, especially in finance-related apps where accuracy is expected.
 
 ---

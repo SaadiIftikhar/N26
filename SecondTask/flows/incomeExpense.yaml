@@ -1,0 +1,79 @@
+appId: com.monefy.app.lite
+---
+#Onbaroding Flow
+- runFlow: C:\Users\Saad\Desktop\N26\SecondTask\flows\onboarding.yaml
+
+# Verify dashboard is ready
+- assertVisible: ${output.incomeExpense.dashboard.balance}
+- assertVisible:
+    id: ${output.incomeExpense.dashboard.incomeButton}
+- assertVisible:
+    id: ${output.incomeExpense.dashboard.expenseButton}
+
+# Add income
+- tapOn:
+    id: ${output.incomeExpense.dashboard.incomeButton}
+- assertVisible: ${output.incomeExpense.income.title}
+- assertVisible:
+    id: ${output.incomeExpense.income.numPad.button2}
+- tapOn:
+    id: ${output.incomeExpense.income.numPad.button2}
+- assertVisible:
+    id: ${output.incomeExpense.income.numPad.button0}
+- tapOn:
+    id: ${output.incomeExpense.income.numPad.button0}
+- tapOn:
+    id: ${output.incomeExpense.income.numPad.button0}
+- assertVisible: ${output.incomeExpense.income.amountText}
+- assertVisible:
+    id: ${output.incomeExpense.income.actionButton}
+- tapOn:
+    id: ${output.incomeExpense.income.actionButton}
+- assertVisible:
+    id: ${output.incomeExpense.income.depositsCategory.image}
+    index: ${output.incomeExpense.income.depositsCategory.imageIndex}
+- assertVisible: ${output.incomeExpense.income.recurringMessage}
+- tapOn:
+    id: ${output.incomeExpense.income.depositsCategory.image}
+    index: ${output.incomeExpense.income.depositsCategory.imageIndex}
+- assertVisible: ${output.incomeExpense.income.confirmationMessage}
+- assertVisible: ${output.incomeExpense.income.balanceMessage}
+- assertVisible: ${output.incomeExpense.dashboard.updatedBalance}
+
+#Swipe directly on the confirmation message
+- swipe:
+    start: 50%, 88%
+    end: 90%, 99%
+    duration: 500
+
+# Add expense
+- tapOn:
+    id: ${output.incomeExpense.dashboard.expenseButton}
+- assertVisible: ${output.incomeExpense.expense.title}
+- assertVisible:
+    id: ${output.incomeExpense.expense.numPad.button2}
+- tapOn:
+    id: ${output.incomeExpense.expense.numPad.button2}
+- assertVisible:
+    id: ${output.incomeExpense.expense.numPad.button0}
+- tapOn:
+    id: ${output.incomeExpense.expense.numPad.button0}
+- assertVisible: ${output.incomeExpense.expense.amountText}
+- assertVisible:
+    id: ${output.incomeExpense.expense.actionButton}
+- tapOn:
+    id: ${output.incomeExpense.expense.actionButton}
+- assertVisible:
+    id: ${output.incomeExpense.expense.carCategory.image}
+    index: ${output.incomeExpense.expense.carCategory.imageIndex}
+- tapOn:
+    id: ${output.incomeExpense.expense.carCategory.image}
+    index: ${output.incomeExpense.expense.carCategory.imageIndex}
+- assertVisible: ${output.incomeExpense.expense.confirmationMessage}
+- assertVisible: ${output.incomeExpense.dashboard.finalBalance}
+
+# Swipe directly on the confirmation message
+- swipe:
+    start: 50%, 88%
+    end: 90%, 99%
+    duration: 500

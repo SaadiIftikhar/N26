@@ -8,52 +8,55 @@ appId: com.monefy.app.lite
     stopApp: true
     clearState: true
 
-# Welcome Screen
-- assertVisible: ${output.onboarding.welcomeScreen.title}
-- assertVisible: ${output.onboarding.welcomeScreen.getStartedBtn}
+# Welcome screen
+- assertVisible: ${output.onboarding.welcome.title}
+- assertVisible: ${output.onboarding.welcome.getStartedText}
 - tapOn:
-    id: ${output.onboarding.welcomeScreen.continueBtn}
+    id: ${output.onboarding.welcome.getStartedButton}
 
-# Control Screen
-- assertVisible: ${output.onboarding.controlScreen.title}
-- assertVisible: ${output.onboarding.controlScreen.amazingBtn}
+# Control spending screen
+- assertVisible: ${output.onboarding.controlSpend.title}
+- assertVisible: ${output.onboarding.controlSpend.amazingText}
 - tapOn:
-    id: ${output.onboarding.welcomeScreen.continueBtn}
+    id: ${output.onboarding.controlSpend.amazingButton}
 
-# Goals Screen
-- assertVisible: ${output.onboarding.goalsScreen.title}
-- assertVisible: ${output.onboarding.goalsScreen.readyBtn}
+# Financial goals screen
+- assertVisible: ${output.onboarding.financialGoals.title}
+- assertVisible: ${output.onboarding.financialGoals.readyText}
 - tapOn:
-    id: ${output.onboarding.welcomeScreen.continueBtn}
+    id: ${output.onboarding.financialGoals.readyButton}
 
-# Welcome Offer Screen
-- assertVisible: ${output.onboarding.welcomeOfferScreen.title}
+# Welcome offer screen
+- assertVisible: ${output.onboarding.welcomeOffer.title}
 - assertVisible:
-    id: ${output.onboarding.welcomeOfferScreen.closeBtn}
+    id: ${output.onboarding.welcomeOffer.closeButton}
 - tapOn:
-    id: ${output.onboarding.welcomeOfferScreen.closeBtn}
+    id: ${output.onboarding.welcomeOffer.closeButton}
 
-# Main Screen
-- assertVisible: ${output.onboarding.mainScreen.title}
+# Dashboard verification
+- assertVisible: ${output.onboarding.dashboard.balance}
+- assertVisible: ${output.onboarding.dashboard.title}
 - assertVisible:
-    id: ${output.onboarding.mainScreen.balanceAmount}
-- assertVisible: ${output.onboarding.mainScreen.addExpenseText}
-- tapOn: ${output.onboarding.mainScreen.addExpenseText}
-- assertVisible: ${output.onboarding.mainScreen.categoryIconText}
-- tapOn: ${output.onboarding.mainScreen.categoryIconText}
-- assertVisible: ${output.onboarding.mainScreen.transferBtnText}
-- tapOn: ${output.onboarding.mainScreen.transferBtnText}
-- assertVisible: ${output.onboarding.mainScreen.currencyText}
-- tapOn: ${output.onboarding.mainScreen.currencyText}
+    id: ${output.onboarding.dashboard.incomeButton}
 - assertVisible:
-    id: ${output.onboarding.mainScreen.overflowMenu}
+    id: ${output.onboarding.dashboard.expenseButton}
+
+# Tutorial tooltips
+- assertVisible: ${output.onboarding.tutorials.expenseTooltip}
+- tapOn: ${output.onboarding.tutorials.expenseTooltip}
+- assertVisible: ${output.onboarding.tutorials.categoryTooltip}
+- tapOn: ${output.onboarding.tutorials.categoryTooltip}
+- assertVisible: ${output.onboarding.tutorials.transferTooltip}
+- tapOn: ${output.onboarding.tutorials.transferTooltip}
+- assertVisible: ${output.onboarding.tutorials.currencyTooltip}
+- tapOn: ${output.onboarding.tutorials.currencyTooltip}
+
+# Settings and overflow menu
+- assertVisible:
+    id: ${output.onboarding.dashboard.settingsButton}
+- assertVisible:
+    id: ${output.onboarding.dashboard.overflowMenu}
 - tapOn:
-    id: ${output.onboarding.mainScreen.overflowMenu}
-- assertNotVisible:
-    id: ${output.onboarding.mainScreen.settingsText}
+    id: ${output.onboarding.dashboard.overflowMenu}
 - assertVisible:
-    id: ${output.onboarding.mainScreen.incomeButton}
-
-    
-
-
+    id: ${output.onboarding.dashboard.incomeButton}

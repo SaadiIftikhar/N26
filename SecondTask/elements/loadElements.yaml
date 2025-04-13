@@ -1,3 +1,5 @@
 appId: com.monefy.app.lite
 ---
-- runScript: onboarding.js 
+- runScript: onboarding.js
+- runScript: incomeExpense.js
+- runScript: dateFilter.js 

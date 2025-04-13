@@ -1,88 +1,47 @@
-// onboarding.js - Contains all onboarding screen elements
+// onboarding.js
 output.onboarding = {
-    // Welcome Screen
-    welcomeScreen: {
+    // Welcome screens
+    welcome: {
         title: "Say hi to your new finance tracker",
-        getStartedBtn: "GET STARTED",
-        continueBtn: "com.monefy.app.lite:id/buttonContinue"
+        getStartedButton: "com.monefy.app.lite:id/buttonContinue",
+        getStartedText: "GET STARTED"
     },
-
-    // Control Screen
-    controlScreen: {
+    
+    // Control spending screen
+    controlSpend: {
         title: "Control your spend and start saving",
-        amazingBtn: "AMAZING"
+        amazingButton: "com.monefy.app.lite:id/buttonContinue",
+        amazingText: "AMAZING"
     },
-
-    // Goals Screen
-    goalsScreen: {
+    
+    // Financial goals screen
+    financialGoals: {
         title: "Together we’ll reach your financial goals",
-        readyBtn: "I’M READY"
+        readyButton: "com.monefy.app.lite:id/buttonContinue",
+        readyText: "I’M READY"
     },
-
-    // Welcome Offer Screen
-    welcomeOfferScreen: {
+    
+    // Welcome offer screen
+    welcomeOffer: {
         title: "Claim your one-time welcome offer",
-        closeBtn: "com.monefy.app.lite:id/buttonClose"
+        closeButton: "com.monefy.app.lite:id/buttonClose"
     },
-
-    // Main Screen
-    mainScreen: {
+    
+    // Main dashboard
+    dashboard: {
+        balance: "Balance $0.00",
         title: "Monefy",
-        balanceAmount: "com.monefy.app.lite:id/balance_amount",
-        addExpenseText: "Tap to add a new expense record",
-        categoryIconText: "Or tap the category icon to add a record faster",
-        transferBtnText: "Tap the 'Transfer' button to move money between accounts",
-        currencyText: "Main currency can be changed here",
-        overflowMenu: "com.monefy.app.lite:id/overflow",
-        settingsText: "com.monefy.app.lite:id/settings_textview",
-        incomeButton: "com.monefy.app.lite:id/income_button"
+        incomeButton: "com.monefy.app.lite:id/income_button",
+        expenseButton: "com.monefy.app.lite:id/expense_button",
+        settingsButton: "com.monefy.app.lite:id/settings_imagebutton",
+        overflowMenu: "com.monefy.app.lite:id/overflow"
+    },
+    
+    // Tutorial tooltips
+    tutorials: {
+        expenseTooltip: "Tap to add a new expense record",
+        categoryTooltip: "Or tap the category icon to add a record faster",
+        transferTooltip: "Tap the 'Transfer' button to move money between accounts",
+        currencyTooltip: "Main currency can be changed here"
     }
 }
-
-// Execute the onboarding flow
-output.commands = [
-    { clearState: {} },
-    { launchApp: {} },
-    
-    // Welcome Screen
-    { assertVisible: output.onboarding.welcomeScreen.title },
-    { assertVisible: output.onboarding.welcomeScreen.getStartedBtn },
-    { tapOn: { id: output.onboarding.welcomeScreen.continueBtn } },
-    
-    // Control Screen
-    { assertVisible: output.onboarding.controlScreen.title },
-    { assertVisible: output.onboarding.controlScreen.amazingBtn },
-    { tapOn: { id: output.onboarding.welcomeScreen.continueBtn } },
-    
-    // Goals Screen
-    { assertVisible: output.onboarding.goalsScreen.title },
-    { assertVisible: output.onboarding.goalsScreen.readyBtn },
-    { tapOn: { id: output.onboarding.welcomeScreen.continueBtn } },
-    
-    // Welcome Offer Screen
-    { assertVisible: output.onboarding.welcomeOfferScreen.title },
-    { assertVisible: { id: output.onboarding.welcomeOfferScreen.closeBtn } },
-    { tapOn: { id: output.onboarding.welcomeOfferScreen.closeBtn } },
-    
-    // Main Screen
-    { assertVisible: output.onboarding.mainScreen.title },
-    { assertVisible: { id: output.onboarding.mainScreen.balanceAmount } },
-    { assertVisible: output.onboarding.mainScreen.addExpenseText },
-    { tapOn: output.onboarding.mainScreen.addExpenseText },
-    
-    { assertVisible: output.onboarding.mainScreen.categoryIconText },
-    { tapOn: output.onboarding.mainScreen.categoryIconText },
-    
-    { assertVisible: output.onboarding.mainScreen.transferBtnText },
-    { tapOn: output.onboarding.mainScreen.transferBtnText },
-    
-    { assertVisible: output.onboarding.mainScreen.currencyText },
-    { tapOn: output.onboarding.mainScreen.currencyText },
-    
-    { assertVisible: { id: output.onboarding.mainScreen.overflowMenu } },
-    { tapOn: { id: output.onboarding.mainScreen.overflowMenu } },
-    
-    { assertVisible: { id: output.onboarding.mainScreen.settingsText } },
-    { assertVisible: { id: output.onboarding.mainScreen.incomeButton } }
-]
-  
