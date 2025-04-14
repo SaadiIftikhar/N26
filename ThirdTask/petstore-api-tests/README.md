@@ -10,19 +10,11 @@ This project contains automated tests for the Swagger Petstore API.
 
 ## Setup
 
-### 1. Download and install Maven
+### 1. Set up Maven
 
-- Download the Apache Maven binary distribution archive.
-- Extract the distribution archive in any directory. Use:
-  ```bash
-  unzip apache-maven-3.9.9-bin.zip
-  ```
-  or
-  ```bash
-  tar xzvf apache-maven-3.9.9-bin.tar.gz
-  ```
-- Add the `bin` directory of the created directory `apache-maven-3.9.9` to the `PATH` environment variable.
-- Confirm with:
+- Maven is already included in the project directory at `N26/ThirdTask/apache-maven-3.9.9/bin`.
+- Add this directory to your `PATH` environment variable.
+- Confirm the setup with:
   ```bash
   mvn -v
   ```
