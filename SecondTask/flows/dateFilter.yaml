@@ -1,7 +1,7 @@
 appId: com.monefy.app.lite
 ---
 #Onbaroding Flow
-- runFlow: C:\Users\Saad\Desktop\N26\SecondTask\flows\onboarding.yaml
+- runFlow: C:/Users/Saad/Desktop/N26/SecondTask/flows/onboarding.yaml
 
 # Open navigation menu and check date filter options
 - assertVisible: ${output.dateFilter.navigation.openButton}

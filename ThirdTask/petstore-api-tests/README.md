@@ -10,14 +10,9 @@ This project contains automated tests for the Swagger Petstore API.
 
 ## Setup
 
-### 1. Set up Maven
+### 1. Download the project files
 
-- Maven is already included in the project directory at `N26/ThirdTask/apache-maven-3.9.9/bin`.
-- Add this directory to your `PATH` environment variable.
-- Confirm the setup with:
-  ```bash
-  mvn -v
-  ```
+- Download the ZIP from: [https://github.com/SaadiIftikhar/N26/tree/main](https://github.com/SaadiIftikhar/N26/tree/main) and upzip it.
 
 ### 2. Download and install Python
 
@@ -29,13 +24,18 @@ This project contains automated tests for the Swagger Petstore API.
   pip --version
   ```
 
-### 3. Download the project files
+### 3. Set up Maven
 
-- Download the ZIP from: [https://github.com/SaadiIftikhar/N26/tree/main](https://github.com/SaadiIftikhar/N26/tree/main)
+- Maven is already included in the project directory at `N26/ThirdTask/apache-maven-3.9.9/bin`.
+- Add this directory to your `PATH` environment variable.
+- Confirm the setup with:
+  ```bash
+  mvn -v
+  ```
 
-### 4. Unzip the downloaded archive
+### 4. Directory
 
-- Extract the files and navigate to the directory:
+- Navigate to the directory:
   ```bash
   cd N26/ThirdTask
   ```
@@ -80,3 +80,11 @@ pip install -r requirements.txt
 
 - `conftest.py` - Contains shared fixtures and configurations
 - `tests/test_pet.py` - Tests for the Pet API endpoints
+
+## Approach and Tech Stack
+
+For this test automation framework, I chose to focus on the **Pet API** domain. The solution is designed to be easy to scale and maintain, utilizing **Python** for its simplicity and readability, along with **pytest** for its powerful testing capabilities. This combination allows for efficient test writing and execution, making it suitable for CRUD operations on the Pet API endpoints.
+
+## Test Execution Report
+
+The test execution report is available at `petstore-api-tests/report.html`.

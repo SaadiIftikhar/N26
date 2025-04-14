@@ -1,7 +1,7 @@
 appId: com.monefy.app.lite
 ---
 # Load element definitions
-- runFlow: C:\Users\Saad\Desktop\N26\SecondTask\elements\loadElements.yaml
+- runFlow: C:/Users/Saad/Desktop/N26/SecondTask/elements/loadElements.yaml
 
 # Launch app with clean state
 - launchApp:

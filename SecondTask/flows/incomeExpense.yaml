@@ -1,7 +1,7 @@
 appId: com.monefy.app.lite
 ---
 #Onbaroding Flow
-- runFlow: C:\Users\Saad\Desktop\N26\SecondTask\flows\onboarding.yaml
+- runFlow: C:/Users/Saad/Desktop/N26/SecondTask/flows/onboarding.yaml
 
 # Verify dashboard is ready
 - assertVisible: ${output.incomeExpense.dashboard.balance}
