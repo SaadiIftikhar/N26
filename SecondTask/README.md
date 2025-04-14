@@ -14,7 +14,8 @@ This repository contains automated UI tests for the Monefy Android application u
    - Clone the repository from GitHub or download it as a ZIP file.
 
 2. **Extract the Files:**
-   - If downloaded as a ZIP, extract the contents to your desired location, e.g., `C:\Users\YourName\SecondTask\`.
+   - If downloaded as a ZIP, extract the contents to your desired location.
+   - Note: In the following instructions, all path references will start from N26 (e.g., ..\N26\SecondTask). Please adjust the paths according to your own directory structure if it's different.
 
 ---
 
@@ -27,9 +28,7 @@ This repository contains automated UI tests for the Monefy Android application u
    - Run the installer and follow the on-screen instructions.
 
 3. **Set JAVA_HOME Environment Variable:**
-   - Open **Control Panel** > **System and Security** > **System** > **Advanced system settings**.
-   - Click on **Environment Variables**.
-   - Under **System variables**, click **New** and enter:
+   - Open the **Environment Variables** window on your system and add a new system variable:
      - **Variable name:** `JAVA_HOME`
      - **Variable value:** Path to your JDK installation, e.g., `C:\Program Files\Java\jdk-17.0.2`
    - Click **OK** to save.
@@ -58,9 +57,7 @@ This repository contains automated UI tests for the Monefy Android application u
      ```
 
 4. **Set ANDROID_HOME Environment Variable:**
-   - Open **Control Panel** > **System and Security** > **System** > **Advanced system settings**.
-   - Click on **Environment Variables**.
-   - Under **System variables**, click **New** and enter:
+   - Open the **Environment Variables** window on your system and add a new system variable:
      - **Variable name:** `ANDROID_HOME`
      - **Variable value:** Path to your Android SDK, e.g., `C:\Users\YourName\AppData\Local\Android\Sdk`
    - Click **OK** to save.
@@ -90,9 +87,7 @@ This repository contains automated UI tests for the Monefy Android application u
    - Maestro is already included in the project directory at `N26\\SecondTask\\bin`.
 
 2. **Update PATH Environment Variable:**
-   - Open **Control Panel** > **System and Security** > **System** > **Advanced system settings**.
-   - Click on **Environment Variables**.
-   - Under **System variables**, find and select the `Path` variable, then click **Edit**.
+   - In the **Environment Variables** window, under **System variables**, find and select the `Path` variable, then click **Edit**.
    - Click **New** and add the path to your Maestro `bin` directory, e.g.:
      ```
      ..\N26\SecondTask\bin
@@ -114,16 +109,16 @@ This repository contains automated UI tests for the Monefy Android application u
    - Launch Android Studio.
 
 2. **Access AVD Manager:**
-   - Navigate to **Tools** > **Device Manager**.
+   - Navigate to **More Actions** > **Virtual Device Manager**.
 
 3. **Create a New Virtual Device:**
-   - Click on **Create Device**.
+   - Click on **+** icon.
    - Select a hardware profile (e.g., Pixel 5) and click **Next**.
    - Choose a system image (e.g., Android 12.0) and click **Next**.
    - Configure the AVD name and settings, then click **Finish**.
 
 4. **Launch the Emulator:**
-   - In the **Device Manager**, click the **Play** button next to your newly created AVD to start the emulator.
+   - In the **Virtual Device Manager**, click the **Play** button next to your newly created AVD to start the emulator.
 
    For more details, refer to the [official Android documentation](https://developer.android.com/studio/run/managing-avds).
 
