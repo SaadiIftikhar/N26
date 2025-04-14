@@ -86,24 +86,20 @@ This repository contains automated UI tests for the Monefy Android application u
 
 ### 4. Install Maestro
 
-1. **Download Maestro:**
-   - Visit the [Maestro Releases](https://github.com/mobile-dev-inc/maestro/releases) page and download the latest release for Windows.
+1. **Maestro:**
+   - Maestro is already included in the project directory at `N26\\SecondTask\\bin`.
 
-2. **Extract and Place Maestro:**
-   - Extract the downloaded ZIP file.
-   - Place the `maestro` executable in a directory of your choice, e.g., `C:\Users\YourName\SecondTask\bin`.
-
-3. **Update PATH Environment Variable:**
+2. **Update PATH Environment Variable:**
    - Open **Control Panel** > **System and Security** > **System** > **Advanced system settings**.
    - Click on **Environment Variables**.
    - Under **System variables**, find and select the `Path` variable, then click **Edit**.
    - Click **New** and add the path to your Maestro `bin` directory, e.g.:
      ```
-     C:\Users\YourName\SecondTask\bin
+     ..\N26\SecondTask\bin
      ```
    - Click **OK** to save.
 
-4. **Verify Maestro Installation:**
+3. **Verify Maestro Installation:**
    - Open a new PowerShell window and run:
      ```powershell
      maestro --version
@@ -136,15 +132,15 @@ This repository contains automated UI tests for the Monefy Android application u
 ### 6. Install the Monefy App on Emulator
 
 1. **Locate the APK:**
-   - Ensure the `monefy.apk` file is located at:
+   - Once emulator is running. Ensure the `monefy.apk` file is located at:
      ```
-     C:\Users\YourName\SecondTask\monefy.apk
+     ..\N26\SecondTask\monefy.apk
      ```
 
 2. **Install the APK:**
    - Open a PowerShell window and run:
      ```powershell
-     adb install C:\Users\YourName\SecondTask\monefy.apk
+     adb install ..\N26\SecondTask\monefy.apk
      ```
    - You should see a success message indicating the app was installed.
 
@@ -194,6 +190,5 @@ After running the test flows, verify that:
 
 ## 📄 Additional Resources
 
-- [Maestro Official Documentation](https://
-::contentReference[oaicite:0]{index=0}
+- [Maestro Official Documentation](https://docs.maestro.dev/)
  
