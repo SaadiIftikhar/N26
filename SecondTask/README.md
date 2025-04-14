@@ -13,7 +13,7 @@ Note: In the following instructions, all path references will start from N26 (e.
 ### 1. Clone and Prepare the Repository
 
 1. **Download the Repository:**
-   - Clone the repository from GitHub or download it as a ZIP file.
+   - Clone the repository from GitHub or download it as a ZIP file (https://github.com/SaadiIftikhar/N26/tree/main).
 
 2. **Extract the Files:**
    - If downloaded as a ZIP, extract the contents to your desired location.
