@@ -87,4 +87,4 @@ For this test automation framework, I chose to focus on the **Pet API** domain. 
 
 ## Test Execution Report
 
-The test execution report is available at `petstore-api-tests/report.html`.
+The test execution report is available at `petstore-api-tests/report.html` (https://github.com/SaadiIftikhar/N26/blob/main/ThirdTask/petstore-api-tests/report.html).
