@@ -167,20 +167,16 @@ With the emulator running and the Monefy app installed, you can execute the test
      ```
 
 3. **Run All Test Flows Sequentially:**
-   - To execute all test flows in the directory:
+   - To execute all test flows:
      ```powershell
-     maestro test .
+     maestro test onboarding.yaml incomeExpense.yaml dateFilter.yaml
      ```
 
----
-
-## ✅ Verification
-
-After running the test flows, verify that:
-
-- The emulator displays the expected UI interactions.
-- The test results indicate successful execution.
-- Any failures are investigated and addressed accordingly.
+4. **Run All Test Flows With Report:**
+   - To execute all test flows with report generation:
+     ```powershell
+     maestro test --format junit onboarding.yaml incomeExpense.yaml dateFilter.yaml
+     ```
 
 ---
 
