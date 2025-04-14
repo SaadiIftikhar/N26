@@ -17,23 +17,27 @@ pip install -r requirements.txt
 
 ## Running Tests
 
-Run the tests with:
+To run the tests, follow these steps:
 
-```bash
-python -m pytest
-```
+1. Install the required dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-For verbose output:
+2. Run the tests with:
+   ```bash
+   python -m pytest
+   ```
 
-```bash
-python -m pytest -v
-```
+3. For verbose output, use:
+   ```bash
+   python -m pytest -v
+   ```
 
-To generate an HTML report:
-
-```bash
-python -m pytest --html=report.html
-```
+4. To generate an HTML report, run:
+   ```bash
+   python -m pytest --html=report.html
+   ```
 
 ## Test Structure
 
