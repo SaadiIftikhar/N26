@@ -149,7 +149,7 @@ With the emulator running and the Monefy app installed, you can execute the test
 1. **Navigate to the Flows Directory:**
    - Open a PowerShell window and navigate to the flows directory:
      ```powershell
-     cd C:\Users\YourName\SecondTask\flows
+     cd ..\N26\SecondTask\flows
      ```
 
 2. **Run Individual Test Flows:**
