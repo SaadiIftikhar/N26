@@ -8,6 +8,8 @@ This repository contains automated UI tests for the Monefy Android application u
 
 ## 🛠️ Setup Instructions
 
+Note: In the following instructions, all path references will start from N26 (e.g., ..\N26\SecondTask). Please adjust the paths according to your own directory structure if it's different.
+
 ### 1. Clone and Prepare the Repository
 
 1. **Download the Repository:**
@@ -15,7 +17,6 @@ This repository contains automated UI tests for the Monefy Android application u
 
 2. **Extract the Files:**
    - If downloaded as a ZIP, extract the contents to your desired location.
-   - Note: In the following instructions, all path references will start from N26 (e.g., ..\N26\SecondTask). Please adjust the paths according to your own directory structure if it's different.
 
 ---
 
