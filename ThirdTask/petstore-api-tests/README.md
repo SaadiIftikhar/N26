@@ -8,7 +8,7 @@ Note: In the following instructions, all path references will start from root (e
 
 - Apache Maven
 - Python 3.6+
-- Swagger Petstore API running on http://localhost:8080. More details can be found at https://github.com/SaadiIftikhar/Saad-Iftikhar/blob/main/README.md.
+- Swagger Petstore API running on http://localhost:8080. More details can be found at [https://github.com/SaadiIftikhar/Saad-Iftikhar/blob/main/README.md](https://github.com/SaadiIftikhar/Saad-Iftikhar/blob/main/ThirdTask/README.md).
 
 ## Setup
 
