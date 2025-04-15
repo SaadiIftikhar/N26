@@ -1,4 +1,19 @@
+
+### 🔹 Second Task
+
+📘 README file for the Second Task:  
+[https://github.com/SaadiIftikhar/N26/blob/main/SecondTask/README.md](https://github.com/SaadiIftikhar/N26/blob/main/SecondTask/README.md)
+
+---
+
+### 🔹 Third Task
+
+📘 README file for the Third Task:  
+[https://github.com/SaadiIftikhar/N26/blob/main/ThirdTask/petstore-api-tests/README.md](https://github.com/SaadiIftikhar/N26/blob/main/ThirdTask/petstore-api-tests/README.md)
+
 # Monefy App Exploratory Testing - Onboarding Flow
+
+**Note:** The flow was tested using the APK file located at `N26/SecondTask/monefy.apk`.
 
 ## Exploratory Testing Charters
 
@@ -9,8 +24,9 @@ Explore the onboarding flow of the Monefy app, including the three welcome scree
 **Findings:**
 - ✅ All onboarding screens appeared in the expected sequence with smooth transitions.
 - ✅ Contextual help texts were displayed correctly and guided the user through initial actions.
-- 🔴 **Text Inconsistency:** The letter "i" does not have a dot above it in the title text "Say hi to your new finance tracker" and the supporting text "You're amazing for taking this first step towards getting better control over your money and financial goals." This inconsistency is also present in the fourth onboarding screen title text "financial" and the supporting text "financial."
-- 🔴 **Button Hidden Behind Overlay:** The "RESTORE" button is almost hidden behind the overlay "CLAIM MY OFFER" button on the one-time offer screen, requiring users to scroll up to see it fully.
+- 🔴 **Text Inconsistency:** The letter "i" does not have a dot above it in the title text "Say hi to your new finance tracker" and the supporting text "You're amazing for taking this first step towards getting better control over your money and financial goals." This inconsistency is also present in the fourth onboarding screen title text "financial" and the supporting text "financial." This could lead to confusion and diminish the perceived professionalism of the app.
+- 🔴 **Button Hidden Behind Overlay:** The "RESTORE" button is almost hidden behind the overlay "CLAIM MY OFFER" button on the one-time offer screen, requiring users to scroll up to see it fully. This could hinder user interaction and lead to frustration, as users may not notice the button.
+- 🔴 **Expense and Income Buttons Change to Plus and Minus:** The expense button changes to a minus (-) sign and the income button changes to a plus (+) sign after repeatedly closing the one-time offer screen and reopening the app. This inconsistency could confuse users regarding the functionality of these buttons, potentially leading to misunderstandings about how to manage their finances.
 
 **Prioritization:**
 **Priority: High**  
@@ -45,6 +61,7 @@ Evaluate the filtering functionality by adding income and expenses to various da
 
 **Findings:**
 - ✅ Filtering by day, week, and interval worked as expected.
+- 🔴 **Text Cutoff for Previous and Next Date:** When selecting a date from the hamburger menu, the text for the previous and next dates is cut off. This could lead to confusion for users trying to understand the selected date range, impacting their ability to analyze their financial data effectively.
 
 **Prioritization:**
 **Priority: Medium**  
@@ -60,10 +77,7 @@ Reason: The filtering functionality is important for users to analyze their fina
 1. **Accessibility Issues:**  
    Ensure that all users, including those with disabilities, can navigate and use the app effectively. This includes proper labeling of buttons and ensuring overlays can be dismissed easily.
 
-2. **Data Security:**  
-   Protect sensitive financial information from unauthorized access and breaches. Implement strong encryption and secure authentication methods.
-
-3. **User Trust:**  
+2. **User Trust:**  
    Maintain a high level of accuracy in financial calculations to build and retain user trust. Any discrepancies can lead to dissatisfaction and loss of users.
 
 4. **Performance Issues:**  
@@ -157,5 +171,32 @@ High
 
 **Notes:**  
 This issue could confuse users, as the change in button symbols may not be intuitive and could lead to misunderstandings about the app's functionality.
+
+---
+
+### Bug 4: Text Cutoff for Next and Previous Date
+
+**Description:**  
+The text for the previous and next date is cut off when selecting a date from the hamburger menu.
+
+**Steps to Reproduce:**  
+1. Run the app for the first time with a clear state.
+2. Go through the onboarding process and close the one-time offer screen.
+3. On the home screen, tap the hamburger menu on the top left side.
+4. Tap "Choose Date" from the hamburger menu and select a date 3 or more days in the past or future.
+5. You will be shown the home screen again with that date at the top; swipe left if the date is selected in the past and right if in the future.
+6. Observe the top left and right side.
+
+**Expected Result:**  
+The previous and next date text should be fully visible without being cut off.
+
+**Actual Result:**  
+The previous and next date text is cut off.
+
+**Severity:**  
+Medium
+
+**Priority:**  
+High
 
 ---
