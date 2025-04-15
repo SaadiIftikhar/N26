@@ -8,12 +8,12 @@ This repository contains automated UI tests for the Monefy Android application u
 
 ## 🛠️ Setup Instructions
 
-Note: In the following instructions, all path references will start from N26 (e.g., ..\N26\SecondTask). Please adjust the start of the path according to your own directory structure.
+Note: In the following instructions, all path references will start from root (e.g., ..\Saad-Iftikhar\SecondTask). Please adjust the start of the path according to your own directory structure.
 
 ### 1. Clone and Prepare the Repository
 
 1. **Download the Repository:**
-   - Clone the repository from GitHub or download it as a ZIP file (https://github.com/SaadiIftikhar/N26/tree/main).
+   - Clone the repository from GitHub or download it as a ZIP file (https://github.com/SaadiIftikhar/Saad-Iftikhar).
 
 2. **Extract the Files:**
    - If downloaded as a ZIP, extract the contents to your desired location.
@@ -85,13 +85,13 @@ Note: In the following instructions, all path references will start from N26 (e.
 ### 4. Install Maestro
 
 1. **Maestro:**
-   - Maestro is already included in the project directory at `N26\\SecondTask\\bin`.
+   - Maestro is already included in the project directory at `..\SecondTask\bin`.
 
 2. **Update PATH Environment Variable:**
    - In the **Environment Variables** window, under **System variables**, find and select the `Path` variable, then click **Edit**.
    - Click **New** and add the path to your Maestro `bin` directory, e.g.:
      ```
-     ..\N26\SecondTask\bin
+     ..\SecondTask\bin
      ```
    - Click **OK** to save.
 
@@ -130,13 +130,13 @@ Note: In the following instructions, all path references will start from N26 (e.
 1. **Locate the APK:**
    - Once emulator is running. Ensure the `monefy.apk` file is located at:
      ```
-     ..\N26\SecondTask\monefy.apk
+     ..\SecondTask\monefy.apk
      ```
 
 2. **Install the APK:**
    - Open a PowerShell window and run:
      ```powershell
-     adb install ..\N26\SecondTask\monefy.apk
+     adb install ..\SecondTask\monefy.apk
      ```
    - You should see a success message indicating the app was installed.
 
@@ -149,7 +149,7 @@ With the emulator running and the Monefy app installed, you can execute the test
 1. **Navigate to the Flows Directory:**
    - Open a PowerShell window and navigate to the flows directory:
      ```powershell
-     cd ..\N26\SecondTask\flows
+     cd ..\SecondTask\flows
      ```
 
 2. **Run Individual Test Flows:**
