@@ -12,7 +12,7 @@ This project contains automated tests for the Swagger Petstore API.
 
 ### 1. Download the project files
 
-- Download the ZIP from: [https://github.com/SaadiIftikhar/N26/tree/main](https://github.com/SaadiIftikhar/N26/tree/main) and upzip it.
+- Download the ZIP from: https://github.com/SaadiIftikhar/Saad-Iftikhar and upzip it.
 
 ### 2. Download and install Python
 
