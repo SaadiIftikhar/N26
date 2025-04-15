@@ -177,6 +177,33 @@ With the emulator running and the Monefy app installed, you can execute the test
      ```powershell
      maestro test --format junit onboarding.yaml incomeExpense.yaml dateFilter.yaml
      ```
+---
+
+## 🛠️ Solution Overview
+
+### Scalability and Maintainability
+
+The test automation framework is designed with scalability and maintainability in mind. Here are the key aspects that contribute to this:
+
+- **Modular Test Design**: Each test flow is defined in separate YAML files, allowing for easy addition or modification of test cases without affecting other flows. This modularity simplifies maintenance and enhances readability.
+
+- **Reusable Components**: Common actions and assertions are encapsulated in reusable functions within the `elements` directory. This reduces code duplication and makes it easier to update the logic in one place.
+
+- **Clear Structure**: The project follows a clear directory structure, separating test flows, element definitions, and configuration files. This organization helps new contributors quickly understand the project layout.
+
+- **Version Control**: The use of Git for version control allows for tracking changes, facilitating collaboration, and managing different versions of the test scripts.
+
+### Approach and Tech Stack
+
+The chosen tech stack for this automation framework includes:
+
+- **Maestro**: A powerful tool for automating mobile applications, which allows for easy interaction with UI elements and supports various testing scenarios. Its YAML-based configuration makes it user-friendly and accessible for non-developers.
+
+- **Java**: The framework leverages Java for its robustness and widespread use in the industry. Java's strong typing and object-oriented features help in building a reliable and maintainable codebase.
+
+- **Android Studio**: This IDE provides a comprehensive environment for developing and testing Android applications, making it easier to manage the Android SDK and emulator.
+
+The combination of these technologies ensures that the framework is not only effective in executing tests but also easy to extend and maintain as the application evolves.
 
 ---
 
