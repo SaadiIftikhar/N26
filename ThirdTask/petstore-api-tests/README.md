@@ -26,7 +26,7 @@ This project contains automated tests for the Swagger Petstore API.
 
 ### 3. Set up Maven
 
-- Maven is already included in the project directory at `N26/ThirdTask/apache-maven-3.9.9/bin`.
+- Maven is already included in the project directory at `../ThirdTask/apache-maven-3.9.9/bin`.
 - Add this directory to your `PATH` environment variable.
 - Confirm the setup with:
   ```bash
@@ -37,7 +37,7 @@ This project contains automated tests for the Swagger Petstore API.
 
 - Navigate to the directory:
   ```bash
-  cd N26/ThirdTask
+  cd ../ThirdTask
   ```
 
 ### 5. Run the server with Maven
@@ -51,7 +51,7 @@ mvn package jetty:run
 
 Navigate to the tests directory:
 ```bash
-cd N26/ThirdTask/petstore-api-tests
+cd ../ThirdTask/petstore-api-tests
 ```
 
 Install the required dependencies:
