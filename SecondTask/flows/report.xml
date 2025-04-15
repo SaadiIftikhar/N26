@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <testsuites>
-  <testsuite name="Test Suite" device="emulator-5554" tests="3" failures="0" time="336">
-    <testcase id="onboarding" name="onboarding" classname="onboarding" time="47" status="SUCCESS"/>
-    <testcase id="incomeExpense" name="incomeExpense" classname="incomeExpense" time="89" status="SUCCESS"/>
-    <testcase id="dateFilter" name="dateFilter" classname="dateFilter" time="200" status="SUCCESS"/>
+  <testsuite name="Test Suite" device="emulator-5554" tests="3" failures="0" time="259">
+    <testcase id="onboarding" name="onboarding" classname="onboarding" time="34" status="SUCCESS"/>
+    <testcase id="incomeExpense" name="incomeExpense" classname="incomeExpense" time="69" status="SUCCESS"/>
+    <testcase id="dateFilter" name="dateFilter" classname="dateFilter" time="156" status="SUCCESS"/>
   </testsuite>
 </testsuites>
