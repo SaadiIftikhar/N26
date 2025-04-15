@@ -191,8 +191,6 @@ The test automation framework is designed with scalability and maintainability i
 
 - **Clear Structure**: The project follows a clear directory structure, separating test flows, element definitions, and configuration files. This organization helps new contributors quickly understand the project layout.
 
-- **Version Control**: The use of Git for version control allows for tracking changes, facilitating collaboration, and managing different versions of the test scripts.
-
 ### Approach and Tech Stack
 
 The chosen tech stack for this automation framework includes:
@@ -204,6 +202,12 @@ The chosen tech stack for this automation framework includes:
 - **Android Studio**: This IDE provides a comprehensive environment for developing and testing Android applications, making it easier to manage the Android SDK and emulator.
 
 The combination of these technologies ensures that the framework is not only effective in executing tests but also easy to extend and maintain as the application evolves.
+
+---
+
+### Test Execution Report
+
+A test execution report is attached in the repository at `flows/report.xml`. This report provides insights into the test runs, including passed and failed tests, which can be useful for debugging and analysis.
 
 ---
 
