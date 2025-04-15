@@ -11,7 +11,7 @@
 📘 README file for the Third Task:  
 [https://github.com/SaadiIftikhar/N26/blob/main/ThirdTask/petstore-api-tests/README.md](https://github.com/SaadiIftikhar/N26/blob/main/ThirdTask/petstore-api-tests/README.md)
 
-# Monefy App Exploratory Testing - Onboarding Flow
+# Monefy App Exploratory Testing
 
 **Note:** The flow was tested using the APK file located at `N26/SecondTask/monefy.apk`.
 
