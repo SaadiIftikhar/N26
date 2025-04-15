@@ -2,6 +2,8 @@
 
 This project contains automated tests for the Swagger Petstore API.
 
+Note: In the following instructions, all path references will start from root (e.g., ..\Saad-Iftikhar\ThirdTask). Please adjust the start of the path according to your own directory structure.
+
 ## Prerequisites
 
 - Apache Maven
