@@ -13,7 +13,7 @@ test
 
 # Monefy App Exploratory Testing
 
-**Note:** The flow was tested using the APK file located at `N26/SecondTask/monefy.apk`.
+**Note:** The flow was tested using the APK file located at `../SecondTask/monefy.apk`.
 
 ## Exploratory Testing Charters
 
