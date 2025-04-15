@@ -76,8 +76,7 @@ Reason: The filtering functionality is important for users to analyze their fina
 
 ## Bugs
 
-**Bug Title:**  
-Text Inconsistency
+### Bug 1: Text Inconsistency
 
 **Description:**  
 There is a text inconsistency in the onboarding screens where the letter "i" does not have a dot above it in certain words.
@@ -104,8 +103,7 @@ This can be a design choice, but as I don't have access to the team, I just want
 
 ---
 
-**Bug Title:**  
-Button Hidden Behind Overlay Button
+### Bug 2: Button Hidden Behind Overlay Button
 
 **Description:**  
 The "RESTORE" button is almost hidden behind the overlay "CLAIM MY OFFER" button on the one-time offer screen.
@@ -132,8 +130,7 @@ This issue could affect user experience, as users may not notice the "RESTORE" b
 
 ---
 
-**Bug Title:**  
-Expense and Income Buttons Change to Plus and Minus
+### Bug 3: Expense and Income Buttons Change to Plus and Minus
 
 **Description:**  
 The expense button changes to a minus (-) sign and the income button changes to a plus (+) sign after repeatedly closing the one-time offer screen and reopening the app.
@@ -157,5 +154,8 @@ Medium
 
 **Priority:**  
 High
+
+**Notes:**  
+This issue could confuse users, as the change in button symbols may not be intuitive and could lead to misunderstandings about the app's functionality.
 
 ---
